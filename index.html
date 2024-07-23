@@ -610,6 +610,15 @@
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                 </div>
 
+                <div class="col-md-6 ">
+                  <input type="text" class="form-control" name="company-name" placeholder="Company name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="tel" class="form-control" name="phone"  pattern="[0-9]{11,15}" placeholder="Phone no" required="" oninvalid="this.setCustomValidity('Phone number must be between 11 and 15 digits.')" 
+                  oninput="this.setCustomValidity('')">
+                </div>
+
                 <div class="col-md-12">
                   <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
                 </div>
